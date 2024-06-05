@@ -25,7 +25,8 @@ Nesse documento são tratados os diferentes tipos de implementação da RAN prov
 > [!NOTE]
 > Ler da documentação no [GIT]().
 
-* **Build do UHD**    
+* **Build do UHD**
+    
     ```sh
     sudo apt -y install libsctp-dev python3.8 cmake-curses-gui libpcre2-dev autoconf automake build-essential ccache cmake cpufrequtils doxygen ethtool g++ git inetutils-tools libboost-all-dev libncurses5 libncurses5-dev libusb-1.0-0 libusb-1.0-0-dev libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy python3-setuptools python3-ruamel.yaml
 
@@ -48,12 +49,11 @@ Nesse documento são tratados os diferentes tipos de implementação da RAN prov
     # Clonar o repositório fonte do projeto OAI
     git clone https://gitlab.eurecom.fr/oai/openairinterface5g.git ~/openairinterface5g
     git checkout develop
-    ```
 
 > [!IMPORTANT]    
 > Por padrão o OAI utiliza o E2AP V2 e KPM V2, o nosso Near-RT RIC (Flexric) foi gerado utilizando a versão 3.
 
-    ```sh
+   ```sh  
     # Modificar os parâmetros da E2AP E KPM
     nano CMakeLists.txt
 
@@ -70,7 +70,7 @@ Nesse documento são tratados os diferentes tipos de implementação da RAN prov
 
     # Build OAI gNB e nrUE
     ./build_oai -w USRP --ninja --nrUE --gNB --build-e2 --build-lib "nrscope" -C
-    ```
+   ```
 
 * **Modelos de Serviço**
 
