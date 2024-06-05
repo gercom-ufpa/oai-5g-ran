@@ -21,7 +21,7 @@ Nesse documento são tratados os diferentes tipos de implementação da RAN prov
 
 ## Pré-requisitos de deploy
 * **5GCN** 
-    * Primeiros instalar e configurar a 5G Core Network da OAI.
+    * Primeiro instalar e configurar a 5G Core Network da OAI.
 > [!NOTE]
 > Ler da documentação no [GIT]().
 
@@ -79,8 +79,8 @@ Nesse documento são tratados os diferentes tipos de implementação da RAN prov
     ```sh
     # Adicionar o repositório do projeto
     git clone ~adicionar nosso repositório~
-    cd ~adicionar nosso repositório/custom~
-    sudo cp flexric/ /usr/local/lib/flexric 
+    cd ~adicionar nosso repositório~
+    sudo cp -r /serviceModels/flexric /usr/local/lib/flexric 
     ``` 
 ## Execução OAI gNB e nrUE
 
