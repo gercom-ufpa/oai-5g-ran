@@ -5,7 +5,7 @@ Nesse repositório são tratados os diferentes tipos de implementação da RAN p
 ## Tipos de implementação
 Temos diferentes tipos de implementação da RAN provida pela OAI, desse modo, elas estão separadas nas seguintes documentações:
 
-### Bare-metal:
+### Bare metal:
 * É possível compilar e implementar a gNodeB em conjunto com as UEs em uma máquina utilizando seus recursos, o passo a passo dessa implementação pode ser feita usando a seguinte [documentação](Docs/Imp-bare-metal.md).
 
 
