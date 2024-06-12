@@ -1,3 +1,4 @@
+# Implementação bare metal (gNB/UEs)
 ## Pré-requisitos Gerais
 * **gNodeb**
     * Sistema Operacional: Ubuntu 22.04 LTS;
