@@ -41,7 +41,7 @@ Agora devemos iniciar o OAI 5G Core (minimal) na Core-host:
 ```sh
 # Comando deve ser executado em Core-host após verificar que estão presentes os 2 diretórios "openairinterface5g" e "OAI-5G-RAN"
 # Essa comando irá substituir o script do docker compose do core onde temos algumas altereções como a imagem da gnb com os modelos de serviço
-cp OAI-5G-RAN/Custom/5GC-OAI/docker-compose.yaml openairinterface5g/ci-scripts/yaml_files/5g_rfsimulator
+cp oai-5g-ran/Custom/5GC-OAI/docker-compose.yaml openairinterface5g/ci-scripts/yaml_files/5g_rfsimulator
 cd openairinterface5g/
 cd ci-scripts/yaml_files/5g_rfsimulator
 docker compose up -d mysql oai-amf oai-smf oai-upf oai-ext-dn
@@ -58,7 +58,7 @@ No terminal da gNB-Host antes de realizar o deploy é necessário verificar e al
 
 ```sh
 # Comando deve ser executado em gNB-host após verificar que estão presentes os 2 diretórios "openairinterface5g" e "OAI-5G-RAN"
-cp OAI-5G-RAN/Custom/RAN/gnb.sa.band78.106prb.rfsim.conf openairinterface5g/ci-scripts/conf_files
+cp oai-5g-ran/Custom/RAN/gnb.sa.band78.106prb.rfsim.conf openairinterface5g/ci-scripts/conf_files
 ```
 Esse arquivo é utilizado na implementação da gNB para carregar algumas informações de conexão, desse modo, dependendo do caso devemos mudar alguns campos para realizar a coneão da gNB com o Near-RT RIC e Core.
 
@@ -89,7 +89,7 @@ O próximo passo é copiar o arquivo docker-compose.yaml modificado para o diret
 
 ```sh
 # Comando deve ser executado em gNB-host após verificar que estão presentes os 2 diretórios "openairinterface5g" e "OAI-5G-RAN"
-cp cp OAI-5G-RAN/Custom/RAN/docker-compose.yaml openairinterface5g/ci-scripts/yaml_files/5g_rfsimulator
+cp oai-5g-ran/Custom/RAN/docker-compose.yaml openairinterface5g/ci-scripts/yaml_files/5g_rfsimulator
 ```
 
 Nesse docker compose temos definidas as configurações da GNB e UEs, bem como a rede gnb-public e o endereço a gNB monolítica:
