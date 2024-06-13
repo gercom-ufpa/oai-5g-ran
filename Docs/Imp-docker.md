@@ -28,7 +28,7 @@ Vamos tratar a implementação desagregada entre RAN, CORE e Near-RT RIC, caso q
 
 ```sh
 # Comando deve ser executado nas máquina da gNB e Core (vamos utilizar no tutorial os nomes gNB-host e Core-host) 
-git clone git@gitlab.eurecom.fr:oai/openairinterface5g.git
+git clone https://gitlab.eurecom.fr/oai/openairinterface5g.git
 git clone git@github.com:gercom-ufpa/oai-5g-ran.git
 # Habilitar o encaminhamento de ip
 sudo sysctl net.ipv4.conf.all.forwarding=1
